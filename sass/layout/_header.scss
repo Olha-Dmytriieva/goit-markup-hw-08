@@ -29,10 +29,18 @@
 
 
 .header{
+    text-decoration: none;
+
+    a{
+        text-decoration: none;
+    }    
+    @media screen and (min-width: 1200px) {
+        
+    
     height: 80px;
     border-bottom: 1px solid #ECECEC;
     a {
-        text-decoration: none;
+        
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -44,12 +52,15 @@
         align-content: baseline;
      }
 }
+}
 /*header without logo*/
 
 
 .navigation-pannel{
+    @media screen and (min-width: 1200px){
     display: inline-flex;
-
+ }
+ 
  }
 
 
@@ -66,10 +77,11 @@
 
 
  .navigation-items{
+    @media screen and (min-width: 1200px){
      & :not(:last-child){
     margin-right: 50px;
 }
-
+}  
     .link {
     display: block;
     padding-top: 32px;
@@ -77,11 +89,7 @@
 }
  }
 
-.flex-container {
-    display: flex;
-    align-items: center;
-    padding-left: 0;
-}
+
 
 .navigation {
 
@@ -112,7 +120,8 @@
 
 
 .navigation-items{
-    display: flex;
+    @media screen and (min-width: 1200px){
+    display: flex;}
 
     a {
         color:$header-color;
@@ -122,13 +131,15 @@
 
 
 .contact-info{
-    padding-left: 305px;
+    @media screen and (min-width: 1200px){
+    padding-left: 305px;}
 
     a{
         color:$subheader-color;
     }
 
     .contact{
+        @media screen and (min-width: 1200px){
         margin-right: 30px;  
         padding-top: 32px;
         padding-bottom: 32px; 
@@ -136,7 +147,7 @@
         &:last-child{
             margin-right: 0px;
         }
-    }
+    } }
 }
 
 .header-svg{

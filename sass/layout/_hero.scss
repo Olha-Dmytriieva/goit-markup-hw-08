@@ -1,13 +1,20 @@
 /*hero section*/
 
 .hero-section{
+height: 400px;   
+background-image:linear-gradient(rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)), url('../images/hero-section-pic/hero.jpg');
+background-color: blue;
+    
+    @media screen and (min-width:1200px){
+    box-sizing: border-box;
+    height: 600px;
     padding-bottom: 200px;
     padding-top: 200px;
-    background-image:linear-gradient(rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)), url('../images/hero-section-pic/hero.jpg');
-    background-color: blue;
+    
+}
 
     .container{
-
+        
         display: flex ;
         flex-direction: column;
         align-items: center;  
@@ -18,20 +25,25 @@
 
 
 .hero-section-header{ 
+    
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
     line-height: 60px;
     /* or 136% */
-    
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: #ffffff;
+    font-size: 26px;
+
+@media screen and (min-width:1200px) {
+    
+    font-size: 44px;
     width: 696px;
     margin-top: 0;
     margin-bottom: 30px;
-    color: #ffffff;
+}
     
    }
 
