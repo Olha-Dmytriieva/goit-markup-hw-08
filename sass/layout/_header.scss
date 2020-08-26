@@ -1,0 +1,159 @@
+/*logo*/
+
+
+.logo-link{
+    margin-right: 85px;
+    padding-top: 19px;
+    padding-bottom: 25px;
+}
+
+.first-part-of-logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.47;
+    color: $accent-color;
+    letter-spacing: 0.03em;
+    
+}
+.second-part-of-logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.47px;
+    color: black;
+    letter-spacing: 0.03em;   
+}
+
+
+.header{
+    height: 80px;
+    border-bottom: 1px solid #ECECEC;
+    a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+
+    .flex-container{
+        display: inline-flex;
+        align-content: baseline;
+     }
+}
+/*header without logo*/
+
+
+.navigation-pannel{
+    display: inline-flex;
+
+ }
+
+
+ .navigation-items {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+ 
+.portfolio-header{
+    border-bottom:  1px solid #ECECEC;
+}
+
+
+ .navigation-items{
+     & :not(:last-child){
+    margin-right: 50px;
+}
+
+    .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+ }
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.navigation {
+
+    .link:hover,
+    .link:focus{
+    color: $accent-color;
+    transition: $transition;}
+
+ .current{
+    position: relative;
+    color: $accent-color;
+
+    &::after {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color:$accent-color;
+        border-radius: 2px;
+        content: "";
+        margin-bottom: 0;
+        margin-top: 30px;
+        
+    }
+    
+    }
+}
+
+
+.navigation-items{
+    display: flex;
+
+    a {
+        color:$header-color;
+    }
+}
+
+
+
+.contact-info{
+    padding-left: 305px;
+
+    a{
+        color:$subheader-color;
+    }
+
+    .contact{
+        margin-right: 30px;  
+        padding-top: 32px;
+        padding-bottom: 32px; 
+        
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+
+.header-svg{
+    fill: #AFB1B8;
+    margin-right: 10px;
+}
+
+.contact-info :hover,
+.contact-info :focus{ 
+    color: $accent-color;
+    transition: $transition;
+
+    .header-svg,
+    .header-svg{
+    fill: $accent-color;
+    transition: $transition;
+}
+}
+
+ 

@@ -1,0 +1,64 @@
+/*Наши преимущества*/
+
+.to-hide{
+    display: none;
+}
+
+
+.our-benefits{
+    padding-bottom: 94px;
+    padding-top: 94px;
+    
+    li{
+    list-style-type: none;
+}
+}
+
+
+
+.benefits-svg{
+    display: flex;
+    background-color: #F5F4FA;
+    width: 270px;
+    border-radius: 4px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.our-benefits-header{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--header-color);
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.our-benefits-description{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--subheader-color);
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    width: 270px;
+}
+
+.our-benefits-list {
+    .our-benefits-item{
+        margin-right: 30px;   
+
+       &:last-child{
+        margin-right: 0;}
+    }
+}
+
+
+
+.our-benefits> .flex-container {
+    padding-left: 0;
+    margin-top: 0;  
+}

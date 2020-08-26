@@ -1,0 +1,124 @@
+.portfolio{
+    padding-bottom: 94px;
+
+    .pic{
+        display:block;
+    }
+}
+
+.portfolio-list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.portfolio-item{
+    background: $background-color;
+    border: 1px solid #EEEEEE;
+    margin-top: 30px;
+    
+    &:nth-child(-n + 3){
+        margin-top: 0;
+    }
+
+    &:hover{
+        border: 1px solid #EEEEEE;
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.product-thumb{
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+        content: '';
+        background-color: rgba(33, 150, 243, 0.9);
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: absolute;
+        opacity: 0; 
+        transform: translateY(100%); 
+        transition:  $transition; 
+    
+    }
+    
+    &:hover::before {
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+
+    &:hover .overlay{
+        opacity: 1;
+        transform: translateY(0);
+       
+    }
+    
+}
+
+.potfolio-pic{
+    display: flex;
+}
+ .overlay{
+     top: 63px;
+     left: 24px;
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 18px;
+     line-height: 28px;
+     /* or 156% */
+     width: 322px;
+     height: 168px;
+     letter-spacing: 0.03em;
+     color:#fff;
+     position: absolute;
+     opacity: 0;
+     margin: 0;
+     transform: translateY(150%);
+     transition:  $transition;
+    }
+
+
+.portfolio-list{ 
+
+    .portfolio-item{
+    margin-right: 30px;
+    padding: 0px;
+
+    &:nth-child(3n){
+        margin-right: 0;
+    
+    }
+}
+}
+
+
+.portfolio-list-header{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--header-color);
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    padding-left: 24px;
+}
+.portfolio-list-description{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--subheader-color);
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-left: 24px;
+}
+
+
+

@@ -1,0 +1,63 @@
+/*hero section*/
+
+.hero-section{
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)), url('../images/hero-section-pic/hero.jpg');
+    background-color: blue;
+
+    .container{
+
+        display: flex ;
+        flex-direction: column;
+        align-items: center;  
+        
+    }
+}
+
+
+
+.hero-section-header{ 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 696px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #ffffff;
+    
+   }
+
+
+
+.hero-section-button{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.80;
+
+    background-color: $accent-color;
+    color: #fff;
+    height: 50px;
+    width: 200px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-width: 0px;
+    border-image: none;
+    border-style: none;
+    border-color: $accent-color;
+
+    :hover,
+    :focus{
+    background-color: $accent-color;
+    color:#fff ;
+    transition: $transition;
+}
+}

@@ -1,0 +1,60 @@
+
+/*чем мы занимаемся*/
+.what-we-are-doing{
+    padding-bottom: 94px; 
+
+    li{
+        list-style-type: none;
+    }
+
+    .flex-container{
+        margin-top: 0px; 
+        
+    }
+}
+
+.what-we-are-doing-header{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.what-we-are-doing-example{
+    justify-content: center;
+
+    .what-we-are-doing-item:last-child{
+        margin-right: 0px;
+    }
+
+    .what-we-are-doing-item{
+        padding-left: 0px;
+        margin-right: 30px;
+        }
+}
+
+    .what-we-are-doing-item{
+        position: relative;
+        display: flex;
+    }
+
+    .what-we-are-doing-list{
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        background-color: rgba(47, 48, 58, 0.8);
+        width: 370px;
+        height: 70px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: #fff;
+    }
+

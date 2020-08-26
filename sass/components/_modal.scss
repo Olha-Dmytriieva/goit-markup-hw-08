@@ -1,0 +1,224 @@
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+
+    
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.modal{
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translateY(-50% -50%); */
+    min-width: 528px;
+    min-height: 581px;
+    background-color: $background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+ .modal-section{
+    position: relative;
+}
+
+
+.modal-name{
+    position: absolute;
+    top: 20%;
+    left: 15%; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #757575;
+} 
+
+.modal-svg{
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-120%);
+    margin: auto;
+}
+
+.modal-svg-close{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    outline: none;
+
+    &:hover{
+        fill: $accent-color;
+        outline: none;
+    }
+    
+}
+
+
+.input:focus ~.modal-svg{
+    fill: $accent-color;
+}
+.input:focus{
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+    background-color: $background-color;
+    outline: none;
+    
+
+}
+.input:focus + .modal-name,
+.input:not(:placeholder-shown) + .modal-name{
+    color:$accent-color;
+    transform: translate( -20px, -35px);
+    transition: $transition;
+    
+}
+
+
+
+.modal-header{
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+   margin-bottom: 30px;
+}
+
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    height: 581px;
+    box-sizing: border-box;
+}  
+
+.input{
+    width: 408px;
+    height: 40px;
+    margin-left: 39px;
+    margin-right: 39px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 40px; 
+
+    &:focus{
+        color: $accent-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        padding-left: 40px;
+        
+    }
+
+}
+
+
+.contact-form-btn.submit{
+    background-color: $accent-color;
+
+}
+
+.textarea{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    width: 465px;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 16px 12px;
+    
+}
+
+.textarea:focus{
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+    background-color: $background-color;
+    outline: none;
+    
+}
+
+
+.agreement{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
+    color: #757575;
+    
+}
+
+.agreement-link{
+    color: $accent-color;
+    margin-left: 2px;
+}
+
+
+.check-field{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #212121;
+    display: flex;
+    background-color: $background-color;
+    margin-right: 8px;  
+    border-radius: 4px;
+    padding-left: 1px;
+}
+
+.checkbox:checked + .check-field{
+    background-color: $accent-color;
+    border: 2px solid $accent-color;
+    border-radius: 4px;
+    transition: $transition;
+    
+    
+   
+}
+.checkbox{
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    
+}
+
+.hero-section-button-modal{
+    
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.80;
+    background-color: $accent-color;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-width: 0px;
+    border-image: none;
+    border-style: none;
+    border-color: $accent-color;
+    margin: auto;
+}

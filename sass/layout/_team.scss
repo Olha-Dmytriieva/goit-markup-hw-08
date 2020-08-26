@@ -1,0 +1,114 @@
+/*our team*/
+.wrapper{
+    background-color: #F5F4FA;
+    display: block;
+}
+.our-team-section{
+    background-color: #F5F4FA;
+    background-size: 100%;
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+    li{
+        list-style-type: none;
+    }
+}
+
+.our-team-section-header{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+.our-team-list {
+    padding-left: 0px;
+    margin-top: 0; 
+
+    .our-team-member:not(:last-child){
+        margin-right: 30px;
+    }
+}
+
+.our-team-member,
+.our-team-position,
+.our-team-social-links{
+   text-align: center;
+}
+
+.our-team-member{
+    background-color: #fff;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $header-color;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.our-team-position{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    color: $subheader-color;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.our-team-social-links {
+
+    padding-top: 16px;
+    padding-bottom: 24px;
+    justify-content: center;
+
+    li{     
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    
+    .team-links {
+    display: flex;
+    background-color:#fff;  
+    border-radius: 50%;
+    width: 44px;
+    height:44px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover,
+    &:focus{
+    background-color:$accent-color; 
+    color: #fff;
+    transition: $transition;
+
+    .team-svg,
+    .team-svg {
+       fill: #FFFFFF;
+       transition: $transition;
+   }
+}
+}
+}
+
+.team-svg{
+    fill: #AFB1B8;
+    transition: $transition;
+}
+
+
+
+
+
+
