@@ -12,7 +12,14 @@
     }
 
     .flex-container{
-        margin-top: 0px; 
+        @media screen and (min-width:1200px){
+           margin-top: 0px; 
+           display: flex;
+           align-items: center;
+           padding-left: 0;
+        }
+
+         
         
     }
 }
