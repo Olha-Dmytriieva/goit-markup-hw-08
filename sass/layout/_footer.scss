@@ -21,9 +21,9 @@
     }
 }
 
-.footer >.container{
-    display: flex;
-}
+// .footer >.container{
+//     display: flex;
+// }
 
 .logo-link-footer{
     padding-top: 60px;
@@ -32,8 +32,13 @@
 
 .footer-first-part{
     padding-top: 60px;
-    padding-bottom: 60px;
-    margin-right: 69px;
+    text-align: center;
+
+    @media screen and (min-width:1200px){
+       padding-bottom: 60px;
+       margin-right: 69px; 
+    }
+    
 }
 .footer-items{
     text-decoration: none;
@@ -67,6 +72,7 @@
 .join-us{
     display:flex;
     vertical-align: top;
+    
 }
 
 
@@ -118,13 +124,18 @@
 }
 
 .footer-modal-form{
-   padding-left: 94px;
+    padding-left: 0;
+
+    @media screen and (min-width:1200px){
+       padding-left: 94px; 
+    }
+   
    
 }
 
 
 .input-footer{
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -134,11 +145,16 @@
     box-sizing: border-box;
     padding-left: 16px;
     color: #fff;
+    margin-bottom: 20px;
 
     &:focus{
         outline: none;
     }
     
+    @media screen and (min-width:1200px) {
+        width: 358px;
+        margin-bottom: 0;
+    }
 }
 
 
@@ -164,11 +180,10 @@
     
 }
 
-.footer-modal:not(:first-child){
-    display: flex;
-    
-    
-}
+// .footer-modal:not(:first-child){
+//     display: flex;
+ 
+// }
 
 .footer-modal-headder{
     /* display: inline-flex; */

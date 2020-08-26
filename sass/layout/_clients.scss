@@ -73,23 +73,28 @@
     color: $accent-color;
     transition: $transition;
 }
+}
 
-    .client-picture{
+
+.client-picture{
+    margin-bottom: 30px;
+
+&:nth-last-child(-n + 2){
+    margin-bottom: 0px;}
+
+@media screen and (min-width:1200px) {
         margin-bottom: 30px;
     
-    &:nth-last-child(-n + 2){
-        margin-bottom: 0px;
+       &:last-child{
+        margin-right: 0;
     }
+
 }
-    
+}
+
     li{
     text-decoration: none;
     list-style-type: none;
 
-    .client-picture:last-child{
-        margin-right: 0;
-    }
+ 
 }
-}
-
-

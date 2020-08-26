@@ -981,21 +981,26 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients-list .client-picture {
+.client-picture {
   margin-bottom: 30px;
 }
 
-.our-clients-list .client-picture:nth-last-child(-n + 2) {
+.client-picture:nth-last-child(-n + 2) {
   margin-bottom: 0px;
 }
 
-.our-clients-list li {
-  text-decoration: none;
-  list-style-type: none;
+@media screen and (min-width: 1200px) {
+  .client-picture {
+    margin-bottom: 30px;
+  }
+  .client-picture:last-child {
+    margin-right: 0;
+  }
 }
 
-.our-clients-list li .client-picture:last-child {
-  margin-right: 0;
+li {
+  text-decoration: none;
+  list-style-type: none;
 }
 
 /*подвал*/
@@ -1018,10 +1023,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.footer > .container {
-  display: flex;
-}
-
 .logo-link-footer {
   padding-top: 60px;
   margin-bottom: 20px;
@@ -1029,8 +1030,14 @@ body {
 
 .footer-first-part {
   padding-top: 60px;
-  padding-bottom: 60px;
-  margin-right: 69px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-first-part {
+    padding-bottom: 60px;
+    margin-right: 69px;
+  }
 }
 
 .footer-items {
@@ -1104,11 +1111,17 @@ body {
 }
 
 .footer-modal-form {
-  padding-left: 94px;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-modal-form {
+    padding-left: 94px;
+  }
 }
 
 .input-footer {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1118,10 +1131,18 @@ body {
   box-sizing: border-box;
   padding-left: 16px;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .input-footer:focus {
   outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .input-footer {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-button-modal {
@@ -1143,10 +1164,6 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: 12px;
-}
-
-.footer-modal:not(:first-child) {
-  display: flex;
 }
 
 .footer-modal-headder {
