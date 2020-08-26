@@ -1,6 +1,10 @@
 
 /*чем мы занимаемся*/
 .what-we-are-doing{
+
+    @media  screen and (max-width:480px){
+     display: none
+    }
     padding-bottom: 94px; 
 
     li{
