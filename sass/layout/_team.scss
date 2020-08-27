@@ -2,13 +2,15 @@
 .wrapper{
     background-color: #F5F4FA;
     display: block;
+    width: 100%;
 }
 .our-team-section{
     background-color: #F5F4FA;
     background-size: 100%;
     padding-bottom: 60px;
     padding-top: 60px;
-
+    box-sizing: border-box;
+    
     @media screen and (min-width:1200px) {
     padding-bottom: 94px;
     padding-top: 94px;

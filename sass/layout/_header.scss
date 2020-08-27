@@ -30,6 +30,7 @@
 
 .header{
     text-decoration: none;
+    position: relative;
 
     a{
         text-decoration: none;
@@ -40,7 +41,7 @@
     height: 80px;
     border-bottom: 1px solid #ECECEC;
     a {
-        
+        text-decoration: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -53,6 +54,31 @@
      }
 }
 }
+
+@media screen and (min-width:480px){
+    .header{
+        
+        position: relative;}
+    
+}
+
+.wrapper-header{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.mobile-btn{
+    background: transparent;
+    border-color: transparent;
+}
+
+.mobile-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 /*header without logo*/
 
 
