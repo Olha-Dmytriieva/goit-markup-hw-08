@@ -31,15 +31,15 @@
 .header{
     text-decoration: none;
     position: relative;
+    border-bottom: 1px solid #ECECEC;
+
 
     a{
         text-decoration: none;
     }    
     @media screen and (min-width: 1200px) {
-        
-    
     height: 80px;
-    border-bottom: 1px solid #ECECEC;}
+    }
     a {
         text-decoration: none;
         font-weight: 500;
@@ -49,8 +49,11 @@
     }
 
     .flex-container{
+        @media screen and (min-width:1200px){
         display: inline-flex;
         align-content: baseline;
+        }
+
      }
 }
 
@@ -66,23 +69,32 @@
     left:0;
     height: 393px;
     background-color: white;
+    display: none;
+    border-top:  1px solid #ECECEC;
+    
+
+    &.is-open{
+        display: block;
+    }
 }
 }}
 
 
-
+@media screen and (max-width:767px){
 .mobile-btn{
     background: transparent;
     border-color: transparent;
     padding: 0;
     margin: 0;
+
     &:hover
     &:focus{
         fill: $accent-color;
     }
 
-}
+}}
 
+@media screen and (max-width:767px){
 .mobile-container{
     display: flex;
     justify-content: space-between;
@@ -98,12 +110,17 @@
 
 .mobile-btn.is-open .mobile-menu{
     display: none;
-}
+}}
 
 /*header without logo*/
 
 
 .navigation-pannel{
+    
+@media screen and (max-width:767px){
+    text-align: center;
+}
+
     @media screen and (min-width: 1200px){
     display: inline-flex;
  }
@@ -127,18 +144,33 @@
     @media screen and (min-width: 1200px){
      & :not(:last-child){
     margin-right: 50px;
+    
 }
 }  
     .link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    @media screen and (max-width:767px){
+        display: inline;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
  }
 
 
 
 .navigation {
+
+    @media screen and (max-width:767px) {
+        &:not(:last-child){
+        margin-bottom: 40px;
+        }
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
 
     .link:hover,
     .link:focus{
@@ -148,6 +180,7 @@
  .current{
     position: relative;
     color: $accent-color;
+
 
     &::after {
         position: absolute;
@@ -159,6 +192,11 @@
         content: "";
         margin-bottom: 0;
         margin-top: 30px;
+        @media screen and (max-width:767px){
+            left: 0;
+            margin-top: 8px;
+
+        }
         
     }
     
@@ -178,11 +216,24 @@
 
 
 .contact-info{
+    @media screen and (max-width:767px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+
     @media screen and (min-width: 1200px){
     padding-left: 305px;}
 
     a{
         color:$subheader-color;
+        @media screen and (max-width:767px){
+        &:not(:last-child){
+            margin-bottom: 16px;
+        }
+    }
     }
 
     .contact{
