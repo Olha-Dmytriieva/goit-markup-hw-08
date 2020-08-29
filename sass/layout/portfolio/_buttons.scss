@@ -3,6 +3,12 @@
     list-style-type: none;
 
     display: flex;
+
+    @media screen  and (max-width:767px){
+         flex-wrap: wrap;
+         justify-content: flex-start;
+        
+    }
     justify-content: center;
     
     
@@ -41,3 +47,10 @@
     .gallery-items .button-portfolio:not(:last-child){
         margin-right: 8px;
     }
+
+    @media screen and (max-width:767px){
+        .gallery-items .button-portfolio{
+        margin-bottom: 21px;
+    }}
+
+    
