@@ -89,7 +89,7 @@
 .join-us{
     display:flex;
     
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1199px) {
         justify-content: center;
        
         
@@ -175,6 +175,10 @@
     &:focus{
         outline: none;
     }
+
+    @media screen and (min-width:768px){
+        width: 450px;
+    }
     
     @media screen and (min-width:1200px) {
         width: 358px;
@@ -211,6 +215,16 @@
  
     
 }
+
+.footer-modal{
+    @media screen and (min-width:768px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+}
+
+
  @media screen and (min-width:1200px){
 .footer-modal:not(:first-child){
     display: flex;
@@ -230,6 +244,10 @@
     @media screen and (max-width:767px){
         margin-top: 60px;
         margin-bottom: 20px;
+    }
+
+    @media screen and (min-width:768px) {
+        text-align: center;
     }
 }
 
