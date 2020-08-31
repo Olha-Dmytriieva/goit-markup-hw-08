@@ -472,6 +472,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .wrapper-header {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .mobile-btn {
     background: transparent;
@@ -640,7 +646,9 @@ body {
 
 @media screen and (min-width: 1200px) {
   .contact-info {
+    flex-direction: row;
     padding-left: 305px;
+    margin-left: 0;
   }
 }
 
@@ -1489,6 +1497,12 @@ li {
 @media screen and (min-width: 768px) {
   .footer-modal-headder {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-modal-headder {
+    text-align: initial;
   }
 }
 

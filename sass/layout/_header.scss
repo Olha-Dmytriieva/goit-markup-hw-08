@@ -96,6 +96,12 @@
     justify-content: space-between;
 }}
 
+@media screen and (min-width:1200px){
+    .wrapper-header{
+        display: block;
+    }
+}
+
 @media screen and (max-width:767px){
 .mobile-btn{
     background: transparent;
@@ -271,7 +277,9 @@
     }
 
     @media screen and (min-width: 1200px){
-    padding-left: 305px;}
+        flex-direction: row;
+        padding-left: 305px;
+        margin-left: 0;}
 
     a{
         color:$subheader-color;
