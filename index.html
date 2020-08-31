@@ -167,7 +167,12 @@
         <h2 class="our-team-section-header">Наша команда</h2>
         <ul class="flex-container our-team-list" >
             <li class="our-team-member">
-                <img src="./images/team/teammember1.jpg" alt="Николай Кучеренко" width="270" height="260">
+                <picture>
+                    <source srcset="./images/team/imgteammember1.jpg 1x, ./images/team/imgteammember1-1.jpg 2x"
+                            media ="(min-width:767px)" type="image">
+                    <img src="./images/team/teammember1.jpg" alt="Николай Кучеренко" width="270" height="260">
+                </picture>
+                
                 <div class="team-frame">
                 <h3 class="our-team-name">Николай Кучеренко</h3>
                 <p class="our-team-position">  Product Designer</p>

@@ -355,6 +355,12 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  display: block;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
