@@ -10,9 +10,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media screen and (min-width:768px) {
+    }
+
     li{
     list-style-type: none;
 }
+
 
     @media screen and (min-width:1200px){
     
@@ -35,9 +39,15 @@
     
     @media screen and (max-width:767px) {
         max-width: 100%;
+       
     }
 
- @media screen and (min-width:1200px){
+    @media screen and (min-width:768px){
+        width: 324px;
+        
+    }
+
+    @media screen and (min-width:1200px){
      width: 270px;
  }   
     
@@ -85,10 +95,18 @@
 
 .our-benefits-list {
     padding-left: 0;
+    
 
     @media  screen and (min-width:480px){
         width:100%;
         margin-right: 0;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 30px) / 2);
+        
     }
 
     @media screen and (min-width: 1200px){

@@ -744,6 +744,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .benefits-svg {
+    width: 324px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .benefits-svg {
     width: 270px;
@@ -797,6 +803,14 @@ body {
   .our-benefits-list {
     width: 100%;
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 
