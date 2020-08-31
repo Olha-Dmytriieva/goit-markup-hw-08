@@ -10,9 +10,11 @@
 
 
 .portfolio-list{
-    list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    list-style-type: none;
+
     padding-left: 0px;
     margin-top: 0;
     margin-bottom: 0;
@@ -21,9 +23,12 @@
 .portfolio-item{
     background: $background-color;
     border: 1px solid #EEEEEE;
-    margin-top: 30px;
+    
+
+ 
     @media screen and (max-width:767px){
         width: 100%;
+        margin-top: 30px;
     }
     
     &:nth-child(-n + 3){
@@ -101,14 +106,28 @@
     }
 
 
-.portfolio-list{ 
+
+
 
 
     
+    .portfolio-item{
+        @media screen and (min-width:768px){
+            // flex-basis: calc((100% - 30px) / 2);
+
+            width: 354px;
+
+
+        
+        }
+    }
+
         .portfolio-item{
 
             margin-bottom: 30px;
             margin-right: 0;
+
+    
 
         @media screen and (min-width:1200px){
             margin-right: 30px;
@@ -121,7 +140,7 @@
     }
 
 }
-}
+
 
 
 .portfolio-list-header{

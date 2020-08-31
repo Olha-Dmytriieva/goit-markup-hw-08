@@ -876,6 +876,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    justify-content: center;
   }
 }
 
@@ -1034,7 +1035,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .our-team-member {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -1455,6 +1456,12 @@ li {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-modal {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .footer-modal:not(:first-child) {
     display: flex;
   }
@@ -1829,9 +1836,10 @@ li {
 }
 
 .portfolio-list {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
   padding-left: 0px;
   margin-top: 0;
   margin-bottom: 0;
@@ -1840,12 +1848,12 @@ li {
 .portfolio-item {
   background: #ffffff;
   border: 1px solid #EEEEEE;
-  margin-top: 30px;
 }
 
 @media screen and (max-width: 767px) {
   .portfolio-item {
     width: 100%;
+    margin-top: 30px;
   }
 }
 
@@ -1917,17 +1925,23 @@ li {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list .portfolio-item {
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    width: 354px;
+  }
+}
+
+.portfolio-item {
   margin-bottom: 30px;
   margin-right: 0;
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio-list .portfolio-item {
+  .portfolio-item {
     margin-right: 30px;
     padding: 0px;
   }
-  .portfolio-list .portfolio-item:nth-child(3n) {
+  .portfolio-item:nth-child(3n) {
     margin-right: 0;
   }
 }
