@@ -648,6 +648,15 @@ body {
   color: #757575;
 }
 
+@media screen and (min-width: 768px) {
+  .contact-info a {
+    margin-bottom: 10px;
+  }
+  .contact-info a:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .contact-info a:not(:last-child) {
     margin-bottom: 16px;
@@ -719,7 +728,7 @@ body {
   font-size: 26px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero-section-header {
     margin-top: 118px;
   }
