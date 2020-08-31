@@ -475,13 +475,13 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  .mobile-btn .mobile-close {
+  .mobile-btn .mobile-menu {
     display: none;
   }
-  .mobile-btn.is-open .mobile-close {
+  .mobile-btn.is-open .mobile-menu {
     display: block;
   }
-  .mobile-btn.is-open .mobile-menu {
+  .mobile-btn.is-open .mobile-close {
     display: none;
   }
 }
@@ -823,7 +823,7 @@ body {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .what-we-are-doing {
     display: none;
   }
@@ -1044,12 +1044,17 @@ body {
 .client-link {
   display: flex;
   background-color: #ffffff;
-  width: 170px;
   height: 90px;
   border: 1px solid  #AFB1B8;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .client-link {
+    width: 170px;
+  }
 }
 
 .client-link:hover {
@@ -1103,6 +1108,12 @@ body {
 
 .client-picture {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .client-picture {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .client-picture:nth-last-child(-n + 2) {
@@ -1367,7 +1378,14 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 100;
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop {
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
 }
 
 .modal {
@@ -1375,11 +1393,18 @@ li {
   /* top: 50%;
     left: 50%;
     transform: translateY(-50% -50%); */
-  min-width: 528px;
-  min-height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+    width: auto;
+    height: auto;
+  }
 }
 
 .modal-section {
@@ -1401,9 +1426,15 @@ li {
 .modal-svg {
   position: absolute;
   top: 50%;
-  left: 60px;
+  left: 19px;
   transform: translateY(-120%);
   margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-svg {
+    left: 60px;
+  }
 }
 
 .modal-svg-close {
@@ -1446,22 +1477,45 @@ li {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .modal-header {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+  }
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
-  height: 581px;
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    height: 581px;
+  }
+}
+
 .input {
-  width: 408px;
   height: 40px;
-  margin-left: 39px;
-  margin-right: 39px;
   margin-bottom: 28px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input {
+    width: 408px;
+  }
 }
 
 .input:focus {
@@ -1476,15 +1530,27 @@ li {
 }
 
 .textarea {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  width: 465px;
-  height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 16px 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .textarea {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .textarea {
+    width: 465px;
+    height: 120px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 .textarea:focus {
@@ -1498,6 +1564,7 @@ li {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1506,6 +1573,13 @@ li {
   /* identical to box height, or 171% */
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .agreement {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
 .agreement-link {
@@ -1552,6 +1626,19 @@ li {
   border-style: none;
   border-color: #2196F3;
   margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section-button-modal {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-section {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
 .gallery-items {

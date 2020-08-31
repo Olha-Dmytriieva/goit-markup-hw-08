@@ -16,7 +16,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 100;
+    
+    @media screen and (max-width:767px){
+        // padding:93px 15px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
 }
 
 .modal{
@@ -24,11 +30,17 @@
     /* top: 50%;
     left: 50%;
     transform: translateY(-50% -50%); */
-    min-width: 528px;
-    min-height: 581px;
+
     background-color: $background-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (min-width:1200px){
+        min-width: 528px;
+        min-height: 581px;
+        width: auto;
+        height: auto;
+    }
 }
 
  .modal-section{
@@ -51,9 +63,14 @@
 .modal-svg{
     position: absolute;
     top: 50%;
-    left: 60px;
+    left: 19px;
     transform: translateY(-120%);
     margin: auto;
+
+    @media screen and (min-width:1200px){
+        left: 60px;
+    }
+
 }
 
 .modal-svg-close{
@@ -99,25 +116,44 @@
    justify-content: center;
    margin-top: 40px;
    margin-bottom: 30px;
+
+   @media screen and (max-width:767px) {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+       
+   }
 }
 
 
 .modal-form{
     display: flex;
     flex-direction: column;
-    height: 581px;
+   
     box-sizing: border-box;
-}  
+
+    @media screen and (min-width:1200px){
+   height: 581px;}
+    }
 
 .input{
-    width: 408px;
+
     height: 40px;
-    margin-left: 39px;
-    margin-right: 39px;
     margin-bottom: 28px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 40px; 
+
+    @media screen and (max-width:767px) {
+
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    @media screen and (min-width:1200px){
+        width: 408px;
+        
+    }
 
     &:focus{
         color: $accent-color;
@@ -136,15 +172,26 @@
 }
 
 .textarea{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    width: 465px;
-    height: 120px;
+
+
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 16px 12px;
+
+    @media screen and (max-width:767px){
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+
+    @media screen  and (min-width:1200px){
+        width: 465px;
+        height: 120px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
     
 }
 
@@ -161,6 +208,7 @@
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -169,6 +217,10 @@
     /* identical to box height, or 171% */
     letter-spacing: 0.03em;
     color: #757575;
+    @media screen and (max-width:767px) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
     
 }
 
@@ -187,6 +239,8 @@
     margin-right: 8px;  
     border-radius: 4px;
     padding-left: 1px;
+
+
 }
 
 .checkbox:checked + .check-field{
@@ -221,4 +275,17 @@
     border-style: none;
     border-color: $accent-color;
     margin: auto;
+    @media screen and (max-width:767px){
+        margin-bottom: 40px;
+    }       
+
+}
+
+
+.modal-section{
+    @media screen and (max-width:767px){
+        margin-left: 40px;
+        margin-right: 40px;
+       
+    }
 }

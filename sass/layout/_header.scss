@@ -101,15 +101,15 @@
     justify-content: space-between;
 }
 
-.mobile-btn .mobile-close{
+.mobile-btn .mobile-menu{
     display: none;
 }
 
-.mobile-btn.is-open .mobile-close{
+.mobile-btn.is-open .mobile-menu{
     display: block;
 }
 
-.mobile-btn.is-open .mobile-menu{
+.mobile-btn.is-open .mobile-close{
     display: none;
 }}
 
